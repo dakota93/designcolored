@@ -8,33 +8,45 @@
     <title>colored design - étape 2</title>
     <link rel="stylesheet" href="pomme.css">
     <style>
-        body{
-            background-color: #ddeeaa;
-        }
+    body {
+    background-color: #ddeeaa;
+    margin: 10px 0; 
+    padding: 0;
+    /* text- align center a cause d'internet explorer (les anciennes version d'IE)  */
+    text-align: center;
+    }
 
     #conteneur {
-        /* margin 0 et auto pour centrer le conteneur dans la page ATTENTION  a donner une largeur */
-            margin: 0 auto;
-            width: 800px;
-            background-color: white;
-            border: 2px solid #aabb44;
-        }
+    /* margin 0 et auto pour centrer le conteneur dans la page ATTENTION  a donner une largeur (c'est une marge automatique) */
+    margin: 0 auto;
+    width: 770px;
+    background-color: white;
+    border: 2px solid #aabb44;
+    text-align: left;
+    }
 
-h1 {
+    header h1 {
+    height: 258px;
+    }
+
+    h1 {
     /* hauteur du h1 dans le header */
     height: 50px;
-}
-img{
+    }
+
+    img {
     width: 500px;
     margin-bottom: 5px;
     margin-top: 5px;
+    /* annule ce qu'on a fait sur body */
     margin-left: 100px;
-}
+    }
 
     </style>
 </head>
 
 <body>
+    <!-- cette division contien l'ensemble de la page ont peux parfois l'a^ppeler "wrapper" "contenu" ou parfois "div id="" ou "main" etc.... -->
     <div id="conteneur">
 
         <!--en tete de la page, de body-->
@@ -45,7 +57,7 @@ img{
             <!--nav>ul>li*5>a[title]{etape n° $}-->
             <nav>
                 <ul>
-                    <img src="img/apple.jpg" alt="pomme">
+                    <!-- <img src="img/apple.jpg" alt="pomme"> -->
                     <li><a href="pomme-etape1.html" title="Colored Design &eacute;tape 1">&eacute;tape n° 1</a></li>
                     <li><a href="etape2.html" title="Colored Design &eacute;tape 2">&eacute;tape n° 2</a></li>
                     <li><a href="etape3.html" title="Colored Design &eacute;tape 3">&eacute;tape n° 3</a></li>
