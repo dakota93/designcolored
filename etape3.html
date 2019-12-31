@@ -30,12 +30,10 @@
 
     header h1 {
         height: 258px;
-        background-image: url(img/apple.jpg);
-        background-repeat: no-repeat;
-        background-position: left bottom;
+        background: url(img/apple.jpg) no-repeat left bottom; 
     }
 
-    h1 {
+    h1{
         /* hauteur du h1 dans le header */
         height: 50px;
     }
@@ -46,6 +44,14 @@
         margin-top: 5px;
         /* annule ce qu'on a fait sur body */
         margin-left: 100px;
+    }
+    
+    main h2 {
+        padding-left: 25px;
+        font-size: 1.4em;
+        color: #9b2;
+        background: url(img/little_apple.gif) no-repeat left bottom;
+        border-bottom: 1px solid #9b2;
     }
 </style>
 </head>
@@ -89,7 +95,7 @@
         </main>
         <!--pied de page-->
         <footer>
-            Réalisation du code HTML/CSS et du design Ohanzee Dakota
+            <p>Réalisation du code HTML/CSS et du design Ohanzee Dakota</p>
         </footer>
     </div>
 </body>
