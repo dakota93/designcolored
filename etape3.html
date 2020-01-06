@@ -11,8 +11,10 @@
         background-color: #ddeeaa;
         margin: 10px 0;
         padding: 0;
+
         /* text- align center a cause d'internet explorer (les anciennes version d'IE)  */
         text-align: center;
+
         /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
         font-size: 0.8em; */
         font: 0.8em "Trebuchet MS", Helvetica, sans-serif;
@@ -30,6 +32,8 @@
 
     header h1 {
         height: 258px;
+
+        /* top ou botom pour l'image h1 */
         background: url(img/apple.jpg) no-repeat left bottom; 
     }
 
@@ -45,14 +49,54 @@
         /* annule ce qu'on a fait sur body */
         margin-left: 100px;
     }
+    main {
+        /* padding pour main afin de caler les contenus dans la main et de laisser la place a l'image en arrière plan */
+        
+        padding: 0 30px 0 100px;
+        background: url(img/bg_page.gif) no-repeat left top;
+
+
+    }
     
     main h2 {
         padding-left: 25px;
         font-size: 1.4em;
+        line-height: 25px;
         color: #9b2;
         background: url(img/little_apple.gif) no-repeat left bottom;
         border-bottom: 1px solid #9b2;
     }
+
+    main p {
+        line-height: 1.7em;
+        text-align: justify ;
+    }
+
+    main h3 {
+        margin-left: 15px;
+        padding-left: 5px;
+        border-bottom: 1px solid #9b2;
+        border-left: 3px solid #9b2;
+        color: #9b2;
+    }
+
+    main a {
+        color: #9b2;
+    }
+
+    main a:hover {
+        color: rgb(187, 34, 34);
+    }
+    
+    footer p {
+        margin: 0;
+        padding-right: 10px;
+
+        color: #8a0;
+        line-height: 30px;
+        text-align: right;
+    }
+ 
 </style>
 </head>
 
@@ -81,7 +125,7 @@
             <h2>Un titre/// etape 3</h2>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat est perferendis alias eius illum at id!
-                Ipsam sunt velit quia, odit eaque repudiandae cupiditate! Ducimus modi cupiditate beatae debitis
+               Ducimus modi cupiditate beatae debitis
                 ratione!</p>
             <p>Laboriosam obcaecati ut, debitis libero facilis, veniam error atque, dolores vel beatae quaerat rerum
                 consequuntur magnam hic dolorum aperiam itaque dolorem amet. Minima id quos voluptatibus ad sint debitis
@@ -89,9 +133,29 @@
             <p>Laborum cupiditate sed, quisquam, iure nesciunt numquam error quae reiciendis esse omnis voluptates
                 deserunt exercitationem ea corrupti consequuntur accusamus eius cumque asperiores odio. Nesciunt
                 incidunt quidem placeat commodi! Dicta, eligendi.</p>
-            <p>Eveniet, omnis? Ratione exercitationem fugit assumenda soluta aliquam magnam minima! Id aliquid facere
-                dolores repellat a incidunt, temporibus animi ducimus in? Impedit aliquid porro illo, ducimus accusamus
-                labore nisi cum?</p>
+
+            <p>Eveniet, omnis? Ratione exercitationem fugit assumenda soluta aliquam magnam minima! Id aliquid facere dolores repellat a incidunt, temporibus animi ducimus in? Impedit aliquid porro illo, ducimus accusamuslabore nisi cum?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat est perferendis alias eius illum at id!
+                    Ipsam sunt velit quia, odit eaque repudiandae cupiditate! Ducimus modi cupiditate beatae debitis
+                    ratione!</p>
+            <h2>Un soutitre</h2>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat est perferendis alias eius illum at id!
+                Ipsam sunt velit quia, odit eaque repudiandae cupiditate! Ducimus modi cupiditate beatae debitis
+                ratione!</p>
+            <p>Laboriosam obcaecati ut, debitis libero facilis, veniam error atque, dolores vel beatae quaerat rerum
+                consequuntur magnam hic dolorum aperiam itaque dolorem amet. Minima id quos voluptatibus ad sint debitis  <a href="#" title="lien">, odit eaque repudiandae cupiditate!</a>
+                quasi.</p>
+                <h2>Un sous titre numero 2</h2>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat est perferendis alias eius illum at id!
+                    Ipsam sunt velit quia, odit eaque repudiandae cupiditate! Ducimus modi cupiditate beatae debitis
+                    ratione!</p>
+                    <h3> sous titre numero 3</h3>
+                <p>Laboriosam obcaecati ut, debitis libero facilis, veniam error atque, dolores vel beatae quaerat rerum
+                    consequuntur magnam hic dolorum aperiam itaque dolorem amet. Minima id quos voluptatibus ad sint debitis
+                    quasi.</p>
         </main>
         <!--pied de page-->
         <footer>

@@ -5,8 +5,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>colored design - étape 4</title>
-    <link rel="stylesheet" href="pomme.css">
+    <title>colored design - étape 3</title>
+    <style>
+        body {
+            background-color: #ddeeaa;
+            margin: 10px 0;
+            padding: 0;
+
+            /* text- align center a cause d'internet explorer (les anciennes version d'IE)  */
+            text-align: center;
+
+            /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        font-size: 0.8em; */
+            font: 0.8em "Trebuchet MS", Helvetica, sans-serif;
+        }
+
+
+        #conteneur {
+            /* margin 0 et auto pour centrer le conteneur dans la page ATTENTION  a donner une largeur (c'est une marge automatique) */
+            margin: 0 auto;
+            width: 770px;
+            background-color: #fff;
+            border: 2px solid #ab4;
+            text-align: left;
+        }
+
+        header h1 {
+            height: 258px;
+
+            /* top ou botom pour l'image h1 */
+            background: url(img/apple.jpg) no-repeat left bottom;
+        }
+        header h1 a {
+            /*l'image en arriere plan du h1*/
+            width: 400px;
+            height: 70px;
+            display: block;
+            /* dès l'instant ou on change d'inline en block il est preferable de mettres des tailles largeur et / ou hauteur a l'element */
+
+            background: url(img/title.gif) no-repeat;
+            position: relative;
+            left: 350px;
+            top: 15px;
+            /* text indent pour masquer le text */
+            text-indent: -5000px;
+        }
+        ul#menu {
+            height: 35px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background: url(img/bg_menu.gif) repeat-x 0 -25px;
+
+                }
+
+        ul#menu li {
+            float: left; 
+            text-align: center;
+                }
+
+        ul#menu li a {
+            width: 130px;
+            display: block;
+            border-right: 2px solid #dea;
+            font-size: 1.2em;
+            text-decoration: none;
+            line-height: 25px;
+            font-weight: bold;
+            color: #fff;
+            letter-spacing: 2px;
+                }
+
+        ul#menu li a:hover{
+            background: url(img/bg_menu.gif) repeat-x 0 0;
+        }
+
+        h1 {
+            /* hauteur du h1 dans le header */
+            height: 50px;
+        }
+
+        img {
+            width: 500px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            /* annule ce qu'on a fait sur body */
+            margin-left: 100px;
+        }
+
+        main {
+            /* padding pour main afin de caler les contenus dans la main et de laisser la place a l'image en arrière plan */
+
+            padding: 0 30px 0 100px;
+            background: url(img/bg_page.gif) no-repeat left top;
+
+
+        }
+
+        main h2 {
+            padding-left: 25px;
+            font-size: 1.4em;
+            line-height: 25px;
+            color: #9b2;
+            background: url(img/little_apple.gif) no-repeat left bottom;
+            border-bottom: 1px solid #9b2;
+        }
+
+        main p {
+            line-height: 1.7em;
+            text-align: justify;
+        }
+
+        main h3 {
+            margin-left: 15px;
+            padding-left: 5px;
+            border-bottom: 1px solid #9b2;
+            border-left: 3px solid #9b2;
+            color: #9b2;
+        }
+
+        main a {
+            color: #9b2;
+        }
+
+        main a:hover {
+            color: rgb(187, 34, 34);
+        }
+
+        footer p {
+            margin: 0;
+            padding-right: 10px;
+
+            color: #8a0;
+            line-height: 30px;
+            text-align: right;
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -19,7 +154,8 @@
             <h1><a href="#" title="Colored Design">Colored Design</a></h1>
             <!--nav>ul>li*5>a[title]{etape n° $}-->
             <nav>
-                <ul>
+                <!-- on rajoute  id="menu" a notre ul qui sert a la navigation -->
+                <ul id="menu">
                     <li><a href="pomme-etape1.html" title="Colored Design &eacute;tape 1">&eacute;tape n° 1</a></li>
                     <li><a href="etape2.html" title="Colored Design &eacute;tape 2">&eacute;tape n° 2</a></li>
                     <li><a href="etape3.html" title="Colored Design &eacute;tape 3">&eacute;tape n° 3</a></li>
@@ -34,7 +170,7 @@
             <h2>Un titre/// etape 4</h2>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat est perferendis alias eius illum at id!
-                Ipsam sunt velit quia, odit eaque repudiandae cupiditate! Ducimus modi cupiditate beatae debitis
+                Ducimus modi cupiditate beatae debitis
                 ratione!</p>
             <p>Laboriosam obcaecati ut, debitis libero facilis, veniam error atque, dolores vel beatae quaerat rerum
                 consequuntur magnam hic dolorum aperiam itaque dolorem amet. Minima id quos voluptatibus ad sint debitis
@@ -42,13 +178,36 @@
             <p>Laborum cupiditate sed, quisquam, iure nesciunt numquam error quae reiciendis esse omnis voluptates
                 deserunt exercitationem ea corrupti consequuntur accusamus eius cumque asperiores odio. Nesciunt
                 incidunt quidem placeat commodi! Dicta, eligendi.</p>
+
             <p>Eveniet, omnis? Ratione exercitationem fugit assumenda soluta aliquam magnam minima! Id aliquid facere
-                dolores repellat a incidunt, temporibus animi ducimus in? Impedit aliquid porro illo, ducimus accusamus
-                labore nisi cum?</p>
+                dolores repellat a incidunt, temporibus animi ducimus in? Impedit aliquid porro illo, ducimus
+                accusamuslabore nisi cum?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat est perferendis alias eius illum at id!
+                Ipsam sunt velit quia, odit eaque repudiandae cupiditate! Ducimus modi cupiditate beatae debitis
+                ratione!</p>
+            <h2>Un soutitre</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat est perferendis alias eius illum at id!
+                Ipsam sunt velit quia, odit eaque repudiandae cupiditate! Ducimus modi cupiditate beatae debitis
+                ratione!</p>
+            <p>Laboriosam obcaecati ut, debitis libero facilis, veniam error atque, dolores vel beatae quaerat rerum
+                consequuntur magnam hic dolorum aperiam itaque dolorem amet. Minima id quos voluptatibus ad sint debitis
+                <a href="#" title="lien">, odit eaque repudiandae cupiditate!</a>
+                quasi.</p>
+            <h2>Un sous titre numero 2</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat est perferendis alias eius illum at id!
+                Ipsam sunt velit quia, odit eaque repudiandae cupiditate! Ducimus modi cupiditate beatae debitis
+                ratione!</p>
+            <h3> sous titre numero 3</h3>
+            <p>Laboriosam obcaecati ut, debitis libero facilis, veniam error atque, dolores vel beatae quaerat rerum
+                consequuntur magnam hic dolorum aperiam itaque dolorem amet. Minima id quos voluptatibus ad sint debitis
+                quasi.</p>
         </main>
         <!--pied de page-->
         <footer>
-            Réalisation du code HTML/CSS et du design Ohanzee Dakota
+            <p>Réalisation du code HTML/CSS et du design Ohanzee Dakota</p>
         </footer>
     </div>
 </body>
