@@ -1,0 +1,156 @@
+/* feuille de style etape 6 colored design */
+
+        body {
+            background-color: #ddeeaa;
+            margin: 10px 0;
+            padding: 0;
+
+            /* text- align center a cause d'internet explorer (les anciennes version d'IE)  */
+            text-align: center;
+
+            /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        font-size: 0.8em; */
+        font: 0.8em 'PT Sans', sans-serif;
+
+        font-family: 'Roboto', sans-serif;
+
+        }
+        
+        h2, h3, h4, h5, h6{
+            font-family: 'Roboto', sans-serif;
+        }
+
+
+        #conteneur {
+            /* margin 0 et auto pour centrer le conteneur dans la page ATTENTION  a donner une largeur (c'est une marge automatique) */
+            margin: 0 auto;
+            width: 770px;
+            background-color: #fff;
+            border: 2px solid #ab4;
+            text-align: left;
+        }
+
+        header h1 {
+              /* hauteur du h1 dans le header qui permet de mettre l'image en fond , la taille est dictée par la haiteur de l'image  */
+            height: 258px;
+
+            /* top ou botom pour l'image h1 */
+            background: url(../img/apple.jpg) no-repeat left bottom;
+        }
+
+        header h1 a {
+            /*on donne des dimensions au lien , chose possible grace a la propriété display: block qui transforme le lien en element de type block on peut donners des propriétés de taille . on met  aussi l'image de fond qui a les meme dimension que le cadre ainsi crée*/
+
+            width: 400px;
+            height: 70px;
+            display: block;
+            /* dès l'instant ou on change d'inline en block il est preferable de mettres des tailles largeur et / ou hauteur a l'element */
+
+            background: url(../img/title.gif) no-repeat;
+            position: relative;
+            left: 350px;
+            top: 15px;
+
+            /* pour masquer le text en dehors de la page */
+            text-indent: -5000px;
+        }
+
+        ul#menu {
+            height: 35px;
+            margin: 0;
+            padding: 0;
+
+        /* on met une image de fond avec un décalge de 254px vers le haut */
+            background: url(../img/bg_menu.gif) repeat-x 0 -25px;   
+            list-style: none;
+
+        }
+
+        ul#menu li {
+            /* on rend les lli flottant pour pouvoir les afficher horizontalement */
+            float: left;
+            text-align: center;
+        }
+
+        ul#menu li a {
+            width: 130px;
+            /* grace a la propriété display: block on peux dimensionner les a */
+            display: block;
+            border-right: 2px solid #dea;
+            font-size: 1.2em;
+            text-decoration: none;
+            line-height: 25px;
+            font-weight: bold;
+            color: #fff;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        ul#menu li a:hover {
+            /* on decalle l'image de fond au passage de la souris, ou au survol , ce qui fait une animation  */
+            background: url(../img/bg_menu.gif) repeat-x 0 0;
+        }
+
+        h1 {
+            /* hauteur du h1 dans le header */
+            height: 50px;
+        }
+
+        img {
+            width: 500px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            /* annule ce qu'on a fait sur body */
+            margin-left: 100px;
+        }
+
+        main {
+            /* padding pour main afin de caler les contenus dans la main et de laisser la place a l'image en arrière plan */
+
+            padding: 0 30px 0 100px;
+            background: url(../img/bg_page.gif) no-repeat left top;
+            /* on créer un espace a gauche et a droite  de l'image */
+            background-position: 15px 15px;
+
+
+        }
+
+        main h2 {
+            padding-left: 25px;
+            font-size: 1.4em;
+            line-height: 25px;
+            color: #9b2;
+            background: url(../img/little_apple.gif) no-repeat left bottom;
+            border-bottom: 1px solid #9b2;
+        }
+
+        main p {
+            line-height: 1.7em;
+            text-align: justify;
+        }
+
+        main h3 {
+            margin-left: 15px;
+            padding-left: 5px;
+            border-bottom: 1px solid #9b2;
+            border-left: 3px solid #9b2;
+            color: #9b2;
+        }
+
+        main a {
+            color: #9b2;
+        }
+
+        main a:hover {
+            color: rgb(187, 34, 34);
+        }
+
+        footer p {
+            margin: 0;
+            padding-right: 10px;
+
+            color: #8a0;
+            line-height: 30px;
+            text-align: right;
+        }
+  
